@@ -1,7 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 //@ts-ignore
-import {yellowSubmarine} from './scripts/funcions.js'
+import {changeSize, yellowSubmarine} from './scripts/funcions.js'
 
 @Component({
   selector: 'app-root',
@@ -20,5 +20,6 @@ export class App implements OnInit{
     url!.innerHTML = document.URL
 
     yellowSubmarine("titol")
+    changeSize("taula","50px","50px")
   }
 }
