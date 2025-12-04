@@ -1,5 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+//@ts-ignore
+import {yellowSubmarine} from './scripts/funcions.js'
 
 @Component({
   selector: 'app-root',
@@ -16,5 +18,7 @@ export class App implements OnInit{
 
     let url = document.getElementById('url')
     url!.innerHTML = document.URL
+
+    yellowSubmarine("titol")
   }
 }
