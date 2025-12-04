@@ -23,5 +23,8 @@ export class App implements OnInit{
     changeSize("taula","50px","50px")
     augmentaPrimeraLletra("primera-lletra-gran")
     countWords("lorem-ipsum","resultat")
+
+    const imatge = document.getElementById('imatge-contenidor');
+    imatge!.innerHTML = '<img src="https://play-lh.googleusercontent.com/NN8G4Xc03GSv2_Tu-icuoeOwSo1xoZ4ouzUl24fVlwm5OeIAo7gV0zS1dVRWgCay-BU">'
   }
 }
