@@ -1,7 +1,7 @@
 import {Component, OnInit, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 //@ts-ignore
-import {changeSize, yellowSubmarine} from './scripts/funcions.js'
+import {augmentaPrimeraLletra, changeSize, yellowSubmarine} from './scripts/funcions.js'
 
 @Component({
   selector: 'app-root',
@@ -21,5 +21,6 @@ export class App implements OnInit{
 
     yellowSubmarine("titol")
     changeSize("taula","50px","50px")
+    augmentaPrimeraLletra("primera-lletra-gran")
   }
 }
