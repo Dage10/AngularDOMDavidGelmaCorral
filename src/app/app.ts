@@ -13,5 +13,8 @@ export class App implements OnInit{
   ngOnInit() {
     let element = document.getElementById('text');
     element!.innerHTML = element!.innerHTML.toUpperCase()
+
+    let url = document.getElementById('url')
+    url!.innerHTML = document.URL
   }
 }
