@@ -2,10 +2,12 @@ import {Component, OnInit, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 //@ts-ignore
 import {augmentaPrimeraLletra, changeSize, countWords, yellowSubmarine} from './scripts/funcions.js'
+import {PrimerComponent} from './Components/primer-component/primer-component';
+import {SegonComponent} from './Components/segon-component/segon-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PrimerComponent,SegonComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
