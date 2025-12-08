@@ -1,3 +1,9 @@
 <div>
   Text rebut del servei: {{ textPerMostrar }}
 </div>
+<h2>Informacio del Llibre</h2>
+<p><strong>Titol:</strong> {{ llibre.titol }}</p>
+<p><strong>Tematiques:</strong></p>
+<ul>
+  <li *ngFor="let tema of llibre.tematiques">{{ tema }}</li>
+</ul>
